@@ -1,0 +1,24 @@
+.logo img {
+    width: 185px;
+    height: 55px;
+}
+
+nav {
+    font-weight: 700;
+    font-size: large;
+}
+nav a {
+    color:#1c242a !important;
+}
+nav a:hover{
+    color: #fbd005 !important;
+}
+.dropdown-menu a{
+    color:#1c242a !important;
+    font-weight: 600;
+    font-size: medium;
+}
+.dropdown-menu a:hover{
+    color: #fbd005 !important;
+
+}

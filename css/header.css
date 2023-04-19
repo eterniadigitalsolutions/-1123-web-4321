@@ -1,0 +1,21 @@
+
+.top-header{
+    background: #1c242a !important;
+
+}
+.top-header a{
+    text-decoration: none;
+    color: white;
+}
+.top-header a:hover{
+    color:#fbd005 !important;
+}
+.top-header span{
+    color: white;
+}
+.top-header span:hover{
+    color:#fbd005 !important;
+}
+.card_icon i{
+    --fa-animation-duration: 2s;
+}

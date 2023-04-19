@@ -1,0 +1,75 @@
+.project:hover img{
+    transform: translateY(-10px);
+  }
+  .overlay1 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s ease;
+  background: rgba(0, 0, 0, 0.6) !important;
+    transform: translateY(-10px);
+    display: block;
+
+  }
+
+  .overlay1:hover {
+    opacity: 1;
+  }
+
+  .text_icon1 {
+    color: white !important;
+    font-size: 20px;
+    position: absolute;
+    font-weight: 600 !important;
+    bottom: 5%;
+    left: 5%;
+
+    text-align: center;
+  }
+
+  .text_icon2 {
+    color: white !important;
+    font-size: 20px;
+    position: absolute;
+    font-weight: 600 !important;
+    bottom: 5%;
+    left: 25%;
+
+
+    text-align: center;
+
+  }
+
+  .text_icon3 {
+    color: white !important;
+    font-size: 20px;
+    position: absolute;
+    font-weight: 600 !important;
+    bottom: 5%;
+    left: 45%;
+    text-align: center;
+  }
+
+  .text p {
+    text-align: justify;
+    position: absolute;
+    bottom: 8%;
+    font-size: 13px !important;
+
+    
+  }
+
+  .team_heading p {
+    color: #fbd005;
+  }
+  .text_icon a{
+    color: white !important;
+  }
+  .text_icon:hover a {
+    color: #fbd005 !important;
+  }
+
+ 

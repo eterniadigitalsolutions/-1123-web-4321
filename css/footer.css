@@ -1,0 +1,38 @@
+.footer_para{
+    text-align: justify;
+}
+
+.footer-icon i {
+   
+    color: white;
+  }
+  .footer-icon:hover i,
+  .footer-icon:hover li,
+  .footer-icon:hover a {
+    color: #fbd005;
+
+  }
+  .list-unstyled li,a{
+    text-decoration: none;
+  }
+  .footer_a a{
+    text-decoration: none;
+    color: white;
+  }
+  .footer_para:hover{
+    color: #fbd005 !important;
+}
+footer h5:hover{
+    color: #fbd005 !important;
+
+}
+.footer_a a:hover{
+    color: #fbd005 !important;
+
+}
+footer{
+  background: #252d39;
+}
+footer_email i{
+  --fa-beat-fade-opacity: 0.67; --fa-beat-fade-scale: 1.075;
+}
