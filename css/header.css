@@ -19,3 +19,8 @@
 .card_icon i{
     --fa-animation-duration: 2s;
 }
+/* google tag start */
+.google_tag{
+    display:none;visibility:hidden
+}
+/* google tag end */
