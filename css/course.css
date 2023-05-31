@@ -1,0 +1,317 @@
+.logo img {
+    width: 155px;
+    height: 60px;
+}
+
+nav {
+    font-weight: 700;
+    font-size: large;
+}
+
+nav a {
+    color: #1c242a !important;
+}
+
+nav a:hover {
+    color: white !important;
+}
+
+.dropdown-menu a {
+    color: #1c242a !important;
+    font-weight: 600;
+    font-size: medium;
+}
+
+.dropdown-menu a:hover {
+    color: white !important;
+}
+
+.banner {
+    background: rgba(234, 221, 202);
+    padding: 50px 0px 20px 0px;
+}
+/* image up-down animation start */
+.up-down{
+    animation: up-down linear 4s;
+    animation-iteration-count: infinite;
+    transform-origin: 50% 50%;
+    -webkit-animation: up-down linear 4s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-transform-origin: 50% 50%;
+    -moz-animation: up-down linear 4s;
+    -moz-animation-iteration-count: infinite;
+    -moz-transform-origin: 50% 50%;
+    -o-animation: up-down linear 4s;
+    -o-animation-iteration-count: infinite;
+    -o-transform-origin: 50% 50%;
+    -ms-animation: up-down linear 4s;
+    -ms-animation-iteration-count: infinite;
+    -ms-transform-origin: 50% 50%;
+  }
+  
+  @keyframes up-down{
+    0% {
+      transform:  translate(1px,20px)  ;
+    }
+    24% {
+      transform:  translate(1px,30px)  ;
+    }
+    50% {
+      transform:  translate(1px,12px)  ;
+    }
+    74% {
+      transform:  translate(1px,22px)  ;
+    }
+    100% {
+      transform:  translate(1px,22px)  ;
+    }
+  }
+  
+  @-moz-keyframes up-down{
+    0% {
+      -moz-transform:  translate(1px,20px)  ;
+    }
+    24% {
+      -moz-transform:  translate(1px,30px)  ;
+    }
+    50% {
+      -moz-transform:  translate(1px,12px)  ;
+    }
+    74% {
+      -moz-transform:  translate(1px,22px)  ;
+    }
+    100% {
+      -moz-transform:  translate(1px,22px)  ;
+    }
+  }
+  
+  @-webkit-keyframes up-down {
+    0% {
+      -webkit-transform:  translate(1px,20px)  ;
+    }
+    24% {
+      -webkit-transform:  translate(1px,30px)  ;
+    }
+    50% {
+      -webkit-transform:  translate(1px,12px)  ;
+    }
+    74% {
+      -webkit-transform:  translate(1px,22px)  ;
+    }
+    100% {
+      -webkit-transform:  translate(1px,22px)  ;
+    }
+  }
+  
+  @-o-keyframes up-down {
+    0% {
+      -o-transform:  translate(1px,20px)  ;
+    }
+    24% {
+      -o-transform:  translate(1px,30px)  ;
+    }
+    50% {
+      -o-transform:  translate(1px,12px)  ;
+    }
+    74% {
+      -o-transform:  translate(1px,22px)  ;
+    }
+    100% {
+      -o-transform:  translate(1px,22px)  ;
+    }
+  }
+  
+  @-ms-keyframes up-down {
+    0% {
+      -ms-transform:  translate(1px,20px)  ;
+    }
+    24% {
+      -ms-transform:  translate(1px,30px)  ;
+    }
+    50% {
+      -ms-transform:  translate(1px,12px)  ;
+    }
+    74% {
+      -ms-transform:  translate(1px,22px)  ;
+    }
+    100% {
+      -ms-transform:  translate(1px,22px)  ;
+    }
+  }
+/* image up down animation end */
+/* image-swing start */
+.swing {
+    animation: swing ease-in-out 1s infinite alternate;
+    transform-origin: center -20px;
+    float:left;
+}
+@keyframes swing {
+    0% { transform: rotate(3deg); }
+    100% { transform: rotate(-3deg); }
+}
+/* image swing end */
+/* image blink start */
+.blink_image_div1{
+    position: absolute;
+    top: 0%;
+    left: 0;
+    z-index: 1;
+}
+.up_down_div2{
+    position: absolute;
+    bottom:4%;
+    left: 0;
+    z-index: 1;
+}
+.up_down_div3{
+    position: absolute;
+    bottom:4%;
+    right: 0;
+    z-index: 1;
+}
+.up_down_div4{
+    position: absolute;
+    top:0%;
+    right: 0;
+    z-index: 1;
+}
+.up_down_div5{
+    position: absolute;
+    top:0%;
+    left: 0;
+    z-index: 1;
+}
+.up_down_div6{
+    position: absolute;
+    bottom:4%;
+    right: 0;
+    z-index: 1;  
+}
+.blink-image{
+    width: 100px;
+    height: 100px;
+}
+@media (max-width: 576px) { 
+    .blink-image{
+        width: 60px !important;
+        height: 60px !important;
+    }  
+ }
+
+
+/* Firefox old*/
+@-moz-keyframes blink {
+    0% {
+        opacity:1;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+} 
+
+@-webkit-keyframes blink {
+    0% {
+        opacity:1;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+/* IE */
+@-ms-keyframes blink {
+    0% {
+        opacity:1;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+} 
+/* Opera and prob css3 final iteration */
+@keyframes blink {
+    0% {
+        opacity:1;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+} 
+.blink-image {
+    -moz-animation: blink normal 2s infinite ease-in-out; /* Firefox */
+    -webkit-animation: blink normal 2s infinite ease-in-out; /* Webkit */
+    -ms-animation: blink normal 2s infinite ease-in-out; /* IE */
+    animation: blink normal 2s infinite ease-in-out; /* Opera and prob css3 final iteration */
+}
+/* image blink end */
+/* entroll button start */
+.entroll_btn {
+    background: #673AB7;
+    color: white;
+    /* border: 2px solid royalblue; */
+    text-transform: uppercase;
+}
+.entroll_btn:hover {
+    background: #673AB7 !important;
+    color: white !important;
+}
+/*entroll button end  */
+/* contact form start */
+#hiddenConfirmed{
+    display: none;
+}
+#contact{
+    background-image: url(../image/contact_us_cover.webp);
+    background-position:center;
+    background-size: cover;
+    background-attachment: fixed;
+     min-height: 300px;
+}
+.contact_banner{
+    background:rgba(0, 0, 0, 0.6) ;
+}
+/* contact form end */
+/*eduhub features start */
+.features_heading{
+    border-bottom: 3px solid #E4A11B;
+}
+.features p {
+    font-size: 16px;
+    color: #252d39;
+    font-weight: 400;
+  }
+/* eduhub features end */
+/* specialties_card start */
+@media (max-width: 576px) { 
+    .specialties_card h6{
+        font-size: 14px !important;
+    }
+    .about_us_card h5{
+        font-size: 17px !important;
+    }  
+ }
+/*  specialties_card end*/
+.specialties{
+    background: #E4A11B !important;
+    box-shadow: 0px 8px 10px grey, -10px 8px 15px grey, 10px 8px 15px grey;
+
+}
+
+.curriculum{
+    background: #252d39;
+}
+/* about Us start */
+.about_us_card h5{
+    font-size: 20px;
+}
+/* about Us end */
