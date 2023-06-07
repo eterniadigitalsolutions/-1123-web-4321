@@ -95,3 +95,87 @@
     width: 100;
     background-position: center;
 }
+/* our clients start */
+ /* Slider CSS logic */
+ .slider {
+    --slider-inner-width: 2000px;
+    --slider-speed: 20s;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(-5%);
+    }
+
+    100% {
+        transform: translateX(calc((0px - var(--slider-inner-width)) - 5%))
+    }
+}
+
+.slider {
+    /* -webkit-transform: translate3d(0, 0, 0); */
+    animation: scroll linear infinite var(--slider-speed);
+    width: calc(2 * var(--slider-inner-width));
+    transition: animation-play-state ease 0.3s;
+
+    &:hover {
+        animation-play-state: paused;
+    }
+}
+
+
+
+/* Main styles CSS */
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--dark);
+    /* background: linear-gradient(145deg, rgba(240, 199, 80, 1) 0%, rgba(70, 219, 167, 1) 100%); */
+    /* margin: 0;
+} */ 
+
+.flex-container {
+    /* min-height: vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.slider-container {
+    /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); */
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+
+    .slider {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        margin: 0;
+    }
+
+    .slider__slide {
+        flex-grow: 1;
+        flex-basis: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 35px;
+        /* background: rgba(0, 0, 0, 1); */
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        .slide__content {
+            /* padding: 10px; */
+            border: 1px solid gray; 
+            /* box-shadow: 20px 20px 50px gray; */
+
+        }
+    }
+}
+/* our clients end */

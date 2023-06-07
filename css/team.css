@@ -1,3 +1,6 @@
+.footer_class{
+  position: absolute;z-index: 1; left: 0;
+}
 .project:hover img{
     transform: translateY(-10px);
   }
@@ -57,7 +60,7 @@
     text-align: justify;
     position: absolute;
     bottom: 8%;
-    font-size: 13px !important;
+    font-size: 12px !important;
 
     
   }
@@ -71,5 +74,57 @@
   .text_icon:hover a {
     color: #fbd005 !important;
   }
+/* team icons start */
+.team1{
+  position: absolute; z-index: -1;left: 2.5%; top: 40%;
+}
+.team4{
+  position: absolute; z-index: -1;left: 2.5%; top: 85%;
+}
+.team5{
+  position: absolute; z-index: -1;right: 2.5%; top: 6%;
+}
+.team6{
+  position: absolute; z-index: -1;right: 2.5%; top: 60%;
+}
+.team8{
+  position: absolute; z-index: -1;right: 31%; top: 70%;
+}
+.team9{
+  position: absolute; z-index: -1;left: 31%; top: 20%;
+}
+.team10{
+  position: absolute; z-index: -1;left: 31%; top: 60%;
+}
+.team11{
+  position: absolute; z-index: -1;right: 31%; top: 30%;
+}
 
+@media (max-width: 768px) {
+  .team9{
+    position: absolute; z-index: -1;left: 42% !important; top: 10% !important;
+  }
+  }
+
+/* team icons end */
+/* team icons start */
+@media (max-width: 575.98px){
+
+}
+/* team icons end */
+ /* icon rotating animation start */
  
+.box{
+  animation: animName 8s linear infinite;
+  
+}
+
+@keyframes animName {
+ 0%{
+    transform: rotate(0deg);
+   }
+100%{
+    transform: rotate(360deg);
+   }
+}
+ /* icon rotating animation end */
